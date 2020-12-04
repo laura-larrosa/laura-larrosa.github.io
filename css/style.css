@@ -750,10 +750,6 @@ main {
 
 
 
-    .buttons-together {
-    display: none;
-    
-    }
 
     .buttons-together-mobile {
     display: flex;
