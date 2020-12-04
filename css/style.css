@@ -459,6 +459,8 @@ main {
 
 }
 
+
+
 /*social media button*/
 .social-media  {
     margin-right: 8px;
@@ -758,6 +760,10 @@ main {
     align-content: space-between;
     margin-top: 32px;
     margin-bottom: 16px;
+    }
+
+    .lets-talk .buttons-together {
+        display: none;
     }
 
     .mail {
