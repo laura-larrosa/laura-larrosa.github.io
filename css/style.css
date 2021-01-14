@@ -525,6 +525,13 @@ main {
 
 
 
+
+
+
+
+
+
+/*------------MOBILE-------------*/
 @media only screen and (max-width: 414px) {
     main {
       padding: 0;
@@ -603,6 +610,11 @@ main {
   }
   .main-nav__ul li {
     margin: 0 0 32px 0 !important;
+    
+  }
+  .main-nav__ul li a {
+    font-size: 16pt;
+    
   }
   .main-nav.visible {
     width: 100%;
