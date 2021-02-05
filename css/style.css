@@ -87,10 +87,10 @@ button {
     font-size: 18px;
     font-family: "Montserrat-Bold";
     background-color: white;
-    color: #363636;
+    color: #6D5DA8;
     outline: none;
     border-radius: 20px;
-    border: 1px solid #363636 ;
+    border: 1px solid #6D5DA8 ;
     height: 40px;
     padding-right: 16px;
     padding-left: 16px;
@@ -99,17 +99,17 @@ button {
 
 button:hover {
     cursor: pointer;
-    color: #AD9B6D;
-    border: 1px solid #AD9B6D;
+    color: #AA9DDB;
+    border: 1px solid #AA9DDB;
 
 }
 
 a {
     text-decoration: none;
-    color: #363636;
+    color: #6D5DA8;
 }
 a:hover {
-    color: #AD9B6D;
+    color: #AA9DDB;
   }
 
 img {
@@ -117,11 +117,11 @@ img {
 }
 
 svg {
-    fill: #363636;
+    fill: #6D5DA8;
 }
 
 svg :hover {
-    fill: #AD9B6D;
+    fill: #AA9DDB;
 }
 
 /*Nav bar*/
@@ -154,15 +154,15 @@ svg :hover {
   }
   
   .main-nav__item {
-    font-size: .8rem;
-    color: #363636;
+    font-size: .9rem;
+    color: #6D5DA8;
     cursor: pointer;
     transition: all 0.2s ease-out;
     list-style: none;
   }
 
   .main-nav__item:hover {
-    color: #AD9B6D;
+    color: #AA9DDB;
   }
   .main-nav__item:not(first-child) {
     margin-left: 24px;
@@ -422,7 +422,7 @@ main {
     max-width: 294px;
     opacity: 0;
     transition: .5s ease;
-    background-color: rgba(146, 136, 110, 0.8);
+    background-color: rgba(155, 140, 211, 0.8);
     border-radius: 10px;
 }
 
@@ -464,6 +464,8 @@ main {
 /*social media button*/
 .social-media  {
     margin-right: 8px;
+    background-color: white;
+    color:#6D5DA8 ;
 }
 
 .social-media-last  {
@@ -578,8 +580,8 @@ main {
     
     }
     button::selection {
-    color: #AD9B6D;
-    border: 1px solid #AD9B6D;
+    color: #AA9DDB;
+    border: 1px solid #AA9DDB;
 
     }
 
@@ -587,6 +589,7 @@ main {
     header {
     margin: 0;
     padding: 0;
+    
     }
 
 
@@ -602,6 +605,7 @@ main {
     right: -100vw;
     height: 100vh;
     box-shadow: 0px 4px 12px -6px rgba(0, 0, 0, 0.2);
+    
   }
   .main-nav__ul {
     flex-direction: column;
@@ -622,11 +626,13 @@ main {
     right: 0;
     visibility: visible;
     transition: all 0.8s ease-out;
+    
   }
   .mobile-menu-button {
     display: flex;
     flex-direction: column;
     z-index: 9;
+   
   }
 
 
