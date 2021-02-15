@@ -104,6 +104,13 @@ button:hover {
 
 }
 
+button:disabled {
+    cursor: default;
+    color: #C4C4C4;
+    border: 1px solid #C4C4C4;
+
+}
+
 a {
     text-decoration: none;
     color: #6D5DA8;
@@ -111,6 +118,11 @@ a {
 a:hover {
     color: #AA9DDB;
   }
+
+a:disabled {
+    text-decoration: none;
+    cursor: none;
+}
 
 img {
     width: 100%;
@@ -336,8 +348,16 @@ main {
     display: none;
 }
 
-
-
+.case-study-button-lock button {
+    background-image: url("../img/block-pc.png");
+    background-repeat: no-repeat;
+    background-position: center;   
+    margin-left: 32px;
+    
+    cursor: default;
+    height: 40px;
+    width: 138px;
+}
 
 /*About me*/
 
@@ -757,6 +777,21 @@ main {
     
     width: 5%;
     
+    }
+
+    .case-study-button-lock {
+        display: none;
+    }
+
+    .case-study-button-lock-mobile button {
+        background-image: url("../img/block-phone.png");
+        background-repeat: no-repeat;
+        background-position: center;   
+        margin-left: 32px;
+        
+        cursor: default;
+        height: 32px;
+        width: 126px;
     }
 
 
