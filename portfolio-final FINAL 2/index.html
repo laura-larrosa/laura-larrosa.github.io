@@ -1,0 +1,699 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Laura Larrosa</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="script/nav.js"></script>
+    <script src="script/h1.js"></script>
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+</head>
+
+<body>
+
+    <!-- Nav bar -->
+
+    <main>
+        <header class="main-header">
+            <div class="main-header__wrapper">
+                <div class="brand">
+                    <a href="#intro">
+                        <svg width="145" height="21" viewBox="0 0 145 21" fill="" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M29.4808 15.0858V4.2367C29.4808 3.95709 29.2576 3.7334 28.9786 3.7334H28.1231C27.8441 3.7334 27.621 3.95709 27.621 4.2367V16.2788C27.621 16.5584 27.8441 16.7821 28.1231 16.7821H34.3349C34.6138 16.7821 34.837 16.5584 34.837 16.2788V15.5704C34.837 15.3094 34.6138 15.0858 34.3349 15.0858H29.4808Z"
+                                fill="#6D5DA8" />
+                            <path
+                                d="M44.3415 7.83441V8.65461C43.6534 7.77849 42.5561 7.10741 40.9195 7.10741C37.981 7.10741 36.2327 9.58666 36.2327 12.0659C36.2327 14.5265 37.981 17.0058 40.9195 17.0058C42.5561 17.0058 43.6534 16.3347 44.3415 15.4586V16.2788C44.3415 16.5584 44.5647 16.7821 44.8436 16.7821H45.5504C45.8293 16.7821 46.0525 16.5584 46.0525 16.2788V7.83441C46.0525 7.5548 45.8293 7.33111 45.5504 7.33111H44.8436C44.5647 7.33111 44.3415 7.5548 44.3415 7.83441ZM41.0868 15.4026C39.134 15.4026 37.9624 13.9673 37.9624 12.0659C37.9624 10.1459 39.134 8.71054 41.0868 8.71054C43.1698 8.71054 44.3415 10.1832 44.3415 12.0659C44.3415 13.93 43.1698 15.4026 41.0868 15.4026Z"
+                                fill="#6D5DA8" />
+                            <path
+                                d="M55.499 7.33111C55.2201 7.33111 54.9969 7.5548 54.9969 7.83441V12.7556C54.9969 13.8741 54.2902 15.4026 52.5047 15.4026C50.7379 15.4026 50.1614 14.0791 50.1614 12.7556V7.83441C50.1614 7.5548 49.9382 7.33111 49.6778 7.33111H48.9711C48.6921 7.33111 48.469 7.5548 48.469 7.83441V13.2403C48.469 15.2535 49.9754 17.0058 52.0956 17.0058C53.5276 17.0058 54.4389 16.3161 54.9969 15.4586V16.2788C54.9969 16.5584 55.2201 16.7821 55.499 16.7821H56.2058C56.4661 16.7821 56.6893 16.5584 56.6893 16.2788V7.83441C56.6893 7.5548 56.4661 7.33111 56.2058 7.33111H55.499Z"
+                                fill="#6D5DA8" />
+                            <path
+                                d="M60.8044 8.97151V7.83441C60.8044 7.5548 60.5812 7.33111 60.3209 7.33111H59.6141C59.3352 7.33111 59.112 7.5548 59.112 7.83441V16.2788C59.112 16.5584 59.3352 16.7821 59.6141 16.7821H60.3209C60.5812 16.7821 60.8044 16.5584 60.8044 16.2788V12.5506C60.8044 10.8729 61.1392 8.85967 63.6127 8.99015C63.7987 8.99015 63.9661 8.84102 63.9661 8.65461V7.44295C63.9661 7.25654 63.7987 7.10741 63.5941 7.12606C62.4968 7.21926 61.3809 7.81577 60.8044 8.97151Z"
+                                fill="#6D5DA8" />
+                            <path
+                                d="M73.0014 7.83441V8.65461C72.3133 7.77849 71.216 7.10741 69.5793 7.10741C66.6409 7.10741 64.8926 9.58666 64.8926 12.0659C64.8926 14.5265 66.6409 17.0058 69.5793 17.0058C71.216 17.0058 72.3133 16.3347 73.0014 15.4586V16.2788C73.0014 16.5584 73.2246 16.7821 73.5035 16.7821H74.2103C74.4892 16.7821 74.7124 16.5584 74.7124 16.2788V7.83441C74.7124 7.5548 74.4892 7.33111 74.2103 7.33111H73.5035C73.2246 7.33111 73.0014 7.5548 73.0014 7.83441ZM69.7467 15.4026C67.7939 15.4026 66.6223 13.9673 66.6223 12.0659C66.6223 10.1459 67.7939 8.71054 69.7467 8.71054C71.8297 8.71054 73.0014 10.1832 73.0014 12.0659C73.0014 13.93 71.8297 15.4026 69.7467 15.4026Z"
+                                fill="#6D5DA8" />
+                            <path
+                                d="M84.0944 15.0858V4.2367C84.0944 3.95709 83.8712 3.7334 83.5923 3.7334H82.7368C82.4578 3.7334 82.2346 3.95709 82.2346 4.2367V16.2788C82.2346 16.5584 82.4578 16.7821 82.7368 16.7821H88.9485C89.2275 16.7821 89.4507 16.5584 89.4507 16.2788V15.5704C89.4507 15.3094 89.2275 15.0858 88.9485 15.0858H84.0944Z"
+                                fill="#6D5DA8" />
+                            <path
+                                d="M98.9551 7.83441V8.65461C98.267 7.77849 97.1697 7.10741 95.5331 7.10741C92.5946 7.10741 90.8464 9.58666 90.8464 12.0659C90.8464 14.5265 92.5946 17.0058 95.5331 17.0058C97.1697 17.0058 98.267 16.3347 98.9551 15.4586V16.2788C98.9551 16.5584 99.1783 16.7821 99.4573 16.7821H100.164C100.443 16.7821 100.666 16.5584 100.666 16.2788V7.83441C100.666 7.5548 100.443 7.33111 100.164 7.33111H99.4573C99.1783 7.33111 98.9551 7.5548 98.9551 7.83441ZM95.7005 15.4026C93.7477 15.4026 92.576 13.9673 92.576 12.0659C92.576 10.1459 93.7477 8.71054 95.7005 8.71054C97.7835 8.71054 98.9551 10.1832 98.9551 12.0659C98.9551 13.93 97.7835 15.4026 95.7005 15.4026Z"
+                                fill="#6D5DA8" />
+                            <path
+                                d="M104.775 8.97151V7.83441C104.775 7.5548 104.552 7.33111 104.291 7.33111H103.585C103.306 7.33111 103.083 7.5548 103.083 7.83441V16.2788C103.083 16.5584 103.306 16.7821 103.585 16.7821H104.291C104.552 16.7821 104.775 16.5584 104.775 16.2788V12.5506C104.775 10.8729 105.11 8.85967 107.583 8.99015C107.769 8.99015 107.937 8.84102 107.937 8.65461V7.44295C107.937 7.25654 107.769 7.10741 107.565 7.12606C106.467 7.21926 105.352 7.81577 104.775 8.97151Z"
+                                fill="#6D5DA8" />
+                            <path
+                                d="M111.477 8.97151V7.83441C111.477 7.5548 111.254 7.33111 110.993 7.33111H110.287C110.008 7.33111 109.784 7.5548 109.784 7.83441V16.2788C109.784 16.5584 110.008 16.7821 110.287 16.7821H110.993C111.254 16.7821 111.477 16.5584 111.477 16.2788V12.5506C111.477 10.8729 111.812 8.85967 114.285 8.99015C114.471 8.99015 114.639 8.84102 114.639 8.65461V7.44295C114.639 7.25654 114.471 7.10741 114.267 7.12606C113.169 7.21926 112.053 7.81577 111.477 8.97151Z"
+                                fill="#6D5DA8" />
+                            <path
+                                d="M120.512 7.10741C117.667 7.10741 115.565 9.34433 115.565 12.0659C115.565 14.7875 117.667 17.0244 120.512 17.0244C123.358 17.0244 125.459 14.7875 125.459 12.0659C125.459 9.34433 123.358 7.10741 120.512 7.10741ZM120.512 15.4026C118.652 15.4026 117.313 13.9859 117.313 12.0659C117.313 10.1273 118.652 8.71054 120.512 8.71054C122.372 8.71054 123.73 10.1273 123.73 12.0659C123.73 13.9859 122.372 15.4026 120.512 15.4026Z"
+                                fill="#6D5DA8" />
+                            <path
+                                d="M130.9 11.3016C129.822 11.0779 128.538 11.0034 128.538 9.94084C128.538 9.15792 129.208 8.61733 130.138 8.61733C130.993 8.61733 131.533 8.99015 131.793 9.40025C131.905 9.58666 132.128 9.66123 132.332 9.6053L133.002 9.41889C133.299 9.34433 133.448 8.99015 133.299 8.71054C132.779 7.68528 131.607 7.10741 130.305 7.10741C128.241 7.10741 126.809 8.33772 126.809 10.0713C126.809 11.4508 127.59 12.3082 129.338 12.7183C130.659 13.0166 132.239 12.998 132.239 14.1164C132.239 14.9553 131.551 15.4586 130.324 15.4586C129.134 15.4586 128.557 15.0485 128.297 14.6384C128.166 14.452 127.943 14.3588 127.72 14.4333L126.976 14.6943C126.697 14.7875 126.548 15.123 126.697 15.4026C127.292 16.4465 128.669 17.0058 130.287 17.0058C132.779 17.0058 133.988 15.6077 133.988 13.9487C133.988 12.5133 133.206 11.7863 130.9 11.3016Z"
+                                fill="#6D5DA8" />
+                            <path
+                                d="M143.289 7.83441V8.65461C142.601 7.77849 141.504 7.10741 139.867 7.10741C136.928 7.10741 135.18 9.58666 135.18 12.0659C135.18 14.5265 136.928 17.0058 139.867 17.0058C141.504 17.0058 142.601 16.3347 143.289 15.4586V16.2788C143.289 16.5584 143.512 16.7821 143.791 16.7821H144.498C144.777 16.7821 145 16.5584 145 16.2788V7.83441C145 7.5548 144.777 7.33111 144.498 7.33111H143.791C143.512 7.33111 143.289 7.5548 143.289 7.83441ZM140.034 15.4026C138.082 15.4026 136.91 13.9673 136.91 12.0659C136.91 10.1459 138.082 8.71054 140.034 8.71054C142.117 8.71054 143.289 10.1832 143.289 12.0659C143.289 13.93 142.117 15.4026 140.034 15.4026Z"
+                                fill="#6D5DA8" />
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                d="M20.7294 10.3647C20.7294 16.089 16.089 20.7294 10.3647 20.7294C4.64044 20.7294 0 16.089 0 10.3647C0 4.64044 4.64044 0 10.3647 0C16.089 0 20.7294 4.64044 20.7294 10.3647ZM13.6672 14.6314C14.0105 14.7949 14.2884 14.8767 14.5173 14.893C14.8933 14.9093 15.1712 14.893 15.3183 14.844V16.397H15.1385C15.129 16.3947 15.1037 16.3913 15.0645 16.386C14.833 16.3548 14.1158 16.2584 13.2911 15.9229C13.2421 15.8085 13.2585 15.6287 13.3075 15.5306C13.3368 15.4572 13.3793 15.4365 13.435 15.4094C13.4414 15.4063 13.4479 15.4031 13.4546 15.3998H13.4383C13.2258 15.4652 12.9805 15.5796 12.7844 15.7104C12.441 15.5306 12.0814 15.3017 11.7544 15.0074C11.5256 15.0565 11.264 15.0728 11.0351 15.0565C11.0522 15.0531 11.0678 15.0504 11.0828 15.0478C11.1395 15.038 11.1864 15.0299 11.264 14.9911C11.3457 14.9257 11.4111 14.7949 11.4275 14.6641C11.4029 14.6396 11.3784 14.611 11.3539 14.5824C11.3294 14.5538 11.3049 14.5252 11.2803 14.5006C10.888 14.0592 10.6101 13.5361 10.4139 12.9476C10.561 12.7677 10.6918 12.5716 10.7899 12.3754C10.7408 12.4408 10.7081 12.4735 10.6264 12.5062C10.5447 12.5389 10.3975 12.5225 10.2831 12.4735C10.1196 11.7705 10.0706 10.9695 10.1523 10.103C10.8716 10.1847 11.5419 9.6943 11.689 8.95863C11.9833 7.40556 10.9697 5.90154 9.43299 5.60727L8.8935 8.4028C8.81176 8.76246 8.8935 9.15481 9.10603 9.46543C9.26951 9.71065 9.49838 9.90682 9.7763 10.0049C9.69456 10.7242 9.71091 11.4109 9.809 12.0321H8.22323V16.6096H6.42494V4.11959H9.97248C12.3266 4.11959 13.847 4.80621 14.5173 6.21215C14.7625 6.71894 14.8933 7.29112 14.8933 7.94505C14.8933 8.58263 14.8115 9.12211 14.6317 9.56351C14.4682 10.0049 14.2393 10.3973 13.9287 10.7079C13.3402 11.3291 12.5391 11.7215 11.5092 11.9176C11.9343 13.2255 12.6536 14.141 13.6672 14.6314ZM10.6754 5.80345C10.6101 5.80345 10.561 5.80345 10.4956 5.81979C10.6918 5.95058 10.8716 6.09771 11.0515 6.27754C11.1277 6.25574 11.204 6.24848 11.2803 6.24121C11.3185 6.23758 11.3566 6.23395 11.3948 6.2285C11.2967 6.06502 11.1659 5.93423 10.9861 5.86884C10.888 5.81979 10.7735 5.80345 10.6754 5.80345ZM12.1468 6.44102C11.8198 6.37563 11.4929 6.37563 11.1822 6.42467C11.5419 6.84973 11.7708 7.35652 11.8689 7.89601L12.1468 6.44102Z"
+                                fill="#6D5DA8" />
+                        </svg>
+                    </a>
+                </div>
+                <nav class="main-nav">
+                    <ul class="main-nav__ul">
+                        <li>
+                            <a class="main-nav__item" href="#Works"> Works </a>
+                        </li>
+
+                        <li>
+                            <a class="main-nav__item" href="#About me"> About me </a>
+                        </li>
+                        <li>
+                            <a class="main-nav__item" href="#Contact"> Contact </a>
+                        </li>
+                    </ul>
+                </nav>
+                <!-- mobile nav -->
+                <div class="mobile-menu-button">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </header>
+
+        <!-- INTRO -->
+
+        <section id="intro" data-aos="fade-down">
+            <h1>
+                Hi, It's Laura, <br> an UI/UX designer
+
+            </h1>
+            <p>
+                UX/UI Designer with a background in Industrial Design Engineering and Graphic design with 5 years of
+                experience. I like to use empathy, curiosity, and design to create simple and effective solutions to
+                complex problems.
+            </p>
+            <div class="buttons-together">
+                <a class="contact" href="#Contact">
+                    <button>
+                        Contact
+                    </button>
+                </a>
+                <a class="resume" href="img/CV-Laura Larrosa.pdf" target=_blank>
+
+                    <button>
+                        Resume
+                    </button>
+                </a>
+            </div>
+        </section>
+
+        <!-- WORKS TITLE-->
+
+        <section id="Works">
+            <div class="projects-description" data-aos="fade-up">
+                <div>
+                    <h2>
+                        Works
+                    </h2>
+                    <p class="detail">
+                        5 Selected projects
+                    </p>
+                </div>
+                <div class="arrow-1">
+                    <img src="img/flecha1.svg">
+                </div>
+            </div>
+            <!-- WORKS PORTFOLIO-->
+            <section id="projects-whole">
+
+
+                <!-- PROJECT-1-->
+                <div class="projects" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+                    <div class="project-box-details">
+                        <div class="project-box-details-inside">
+                            <h3>
+                                Babs Pt
+                                <span>
+                                    - A personal training website
+                                </span>
+                            </h3>
+
+                            <a class="case-study-button"
+                                href="https://www.babsdiallo.com"
+                                target=_blank>
+                                <button>
+                                    Website
+                                </button>
+                            </a>
+                        </div>
+                        <div class="project-box-details-inside-down">
+                            <p class="project-info">
+                                Babs Pt is a fitness website design for personal training. 
+                            </p>
+                            <p class="group-solo">
+                               Group: Laura, Cristina & myself
+                            </p>
+                        </div>
+
+
+                        <!--mobile-->
+
+                        <div class="project-box-details-inside-down-mobile">
+                            <div class="description-mobile">
+                                <p class="project-info">
+                                    Babs Pt is a fitness website design for personal training.
+                                </p>
+                            </div>
+                            <div class="mobile-button-solo">
+
+                                <p class="group-solo">
+                                    Group project
+                                </p>
+
+                                <a class="case-study-button2"
+                                    href="https://www.babsdiallo.com"
+                                    target=_blank>
+                                    <button>
+                                        Website
+                                    </button>
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <div class="prototipo-picture">
+                        <a href="https://www.babsdiallo.com"
+                            title="Rover" target="_blank">
+                            <img src="img/Babspt.png" alt="A personal training website">
+                        </a>
+                    </div>
+                </div>
+
+                <!-- PROJECT-2-->
+                <div class="projects" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+                    <div class="project-box-details">
+                        <div class="project-box-details-inside">
+                            <h3>
+                                Realty
+                                <span>
+                                    - A Saas for Real Estate
+                                </span>
+                            </h3>
+
+                            <a class="case-study-button"
+                                href="https://www.behance.net/gallery/115017373/Realty-A-SaaS-Service-for-the-Real-Estate-Sector?"
+                                target=_blank>
+                                <button>
+                                    Case study
+                                </button>
+                            </a>
+                        </div>
+                        <div class="project-box-details-inside-down">
+                            <p class="project-info">
+                                Realty is a SaaS solution for real estate agencies. It will help these companies
+                                    handling all the information required to close deals and match properties with
+                                    customers.
+                            </p>
+                            <p class="group-solo">
+                                Solo project
+                            </p>
+                        </div>
+
+
+                        <!--mobile-->
+
+                        <div class="project-box-details-inside-down-mobile">
+                            <div class="description-mobile">
+                                <p class="project-info">
+                                    Realty is a SaaS solution for real estate agencies. It will help these companies
+                                    handling all the information required to close deals and match properties with
+                                    customers.
+                                </p>
+                            </div>
+                            <div class="mobile-button-solo">
+
+                                <p class="group-solo">
+                                    Solo project
+                                </p>
+
+                                <a class="case-study-button2"
+                                    href="https://www.behance.net/gallery/115017373/Realty-A-SaaS-Service-for-the-Real-Estate-Sector?"
+                                    target=_blank>
+                                    <button>
+                                        Case study
+                                    </button>
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <div class="prototipo-picture">
+                        <a href="https://www.behance.net/gallery/115017373/Realty-A-SaaS-Service-for-the-Real-Estate-Sector?"
+                            title="Rover" target="_blank">
+                            <img src="img/Realty-2.png" alt="Realty SaaS for Real Estate">
+                        </a>
+                    </div>
+                </div>
+
+
+
+
+                <!-- PROJECT-3-->
+                <div class="projects" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+                    <div class="project-box-details">
+                        <div class="project-box-details-inside">
+                            <h3>
+                                Festivalia
+                                <span>
+                                    - Developing a new solution
+                                </span>
+                            </h3>
+
+                            <a class="case-study-button"
+                                href="https://www.behance.net/gallery/113306941/Festivalia-An-App-for-the-events-of-the-Carnival?"
+                                target=_blank>
+                                <button>
+                                    Case study
+                                </button>
+                            </a>
+                        </div>
+                        <div class="project-box-details-inside-down">
+                            <p class="project-info">
+                                An app that aims to make the events of the carnival of Canary Island easier for
+                                tourists. Furthermore, it contains challenges so they can get to know the customs of the
+                                festivities in a more interactive way.
+                            </p>
+                            <p class="group-solo">
+                                Solo project
+                            </p>
+                        </div>
+
+                        <!--mobile-->
+
+                        <div class="project-box-details-inside-down-mobile">
+                            <div class="description-mobile">
+                                <p class="project-info">
+                                    An app that aims to make the events of the carnival of Canary Island easier for
+                                    tourists. Furthermore, it contains challenges so they can get to know the customs of
+                                    the
+                                    festivities in a more interactive way.
+                                </p>
+                            </div>
+                            <div class="mobile-button-solo">
+
+                                <p class="group-solo">
+                                    Solo project
+                                </p>
+
+                                <a class="case-study-button2"
+                                    href="https://www.behance.net/gallery/113306941/Festivalia-An-App-for-the-events-of-the-Carnival?"
+                                    target=_blank>
+                                    <button>
+                                        Case study
+                                    </button>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="prototipo-picture">
+                        <a href="https://www.behance.net/gallery/113306941/Festivalia-An-App-for-the-events-of-the-Carnival?"
+                            title="Belingo" target="_blank">
+                            <img src="img/Festivalia.png" alt="Belingo-app">
+                        </a>
+                    </div>
+                </div>
+
+
+                <!-- PROJECT-4-->
+                <div class="projects" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+                    <div class="project-box-details">
+                        <div class="project-box-details-inside">
+                            <h3>
+                                Belingo
+                                <span>
+                                    - Developing a new solution
+                                </span>
+                            </h3>
+
+                            <a class="case-study-button"
+                                href="https://www.behance.net/gallery/110805799/Belingo-A-finance-UXUI-Case-study"
+                                target=_blank>
+                                <button>
+                                    Case study
+                                </button>
+                            </a>
+                        </div>
+                        <div class="project-box-details-inside-down">
+                            <p class="project-info">
+                                Belingo is an app that will help you plan and save money for that desired trip with your
+                                friends. You just have to choose your desiered destination, vote it and start saving
+                                money in an interactive way.
+                            </p>
+                            <p class="group-solo">
+                                Solo project
+                            </p>
+                        </div>
+
+                        <!--mobile-->
+
+                        <div class="project-box-details-inside-down-mobile">
+                            <div class="description-mobile">
+                                <p class="project-info">
+                                    Belingo is an app that will help you plan and save money for that desired trip with
+                                    your friends. You just have to choose your desiered destination, vote it and start
+                                    saving
+                                    money in an interactive way.
+                                </p>
+                            </div>
+                            <div class="mobile-button-solo">
+
+                                <p class="group-solo">
+                                    Solo project
+                                </p>
+
+                                <a class="case-study-button2"
+                                    href="https://www.behance.net/gallery/110805799/Belingo-A-finance-UXUI-Case-study"
+                                    target=_blank>
+                                    <button>
+                                        Case study
+                                    </button>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="prototipo-picture">
+                        <a href="https://www.behance.net/gallery/110805799/Belingo-A-finance-UXUI-Case-study"
+                            title="Belingo" target="_blank">
+                            <img src="img/belingo.png" alt="Belingo-app">
+                        </a>
+                    </div>
+                </div>
+
+
+
+                <!-- PROJECT-5-->
+                <div class="projects" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+                    <div class="project-box-details">
+                        <div class="project-box-details-inside">
+                            <h3>
+                                Zappa's No.3
+                                <span>
+                                    - E-commerce web redesign
+                                </span>
+                            </h3>
+
+                            <a class="case-study-button"
+                                href="https://www.behance.net/gallery/110955963/Ecommerce-web-redesign-of-a-local-grocery-shop"
+                                target=_blank>
+                                <button>
+                                    Case study
+                                </button>
+                            </a>
+                        </div>
+                        <div class="project-box-details-inside-down">
+                            <p class="project-info">
+                                This was a UX/UI redesign of a local shop e-commerce. I arrived at this project at the
+                                beginning of the UI design and I had to catch up with the previous UX process. We have
+                                developed a new image to the web page that fulfill the user needs.
+                            </p>
+                            <p class="group-solo">
+                                Group: Andrea, Mario & myself
+                            </p>
+                        </div>
+
+                        <!--mobile-->
+
+                        <div class="project-box-details-inside-down-mobile">
+                            <div class="description-mobile">
+                                <p class="project-info">
+                                    This was a UX/UI redesign of a local shop e-commerce. I arrived at this project at
+                                    the
+                                    beginning of the UI design and I had to catch up with the previous UX process. We
+                                    have
+                                    developed a new image to the web page that fulfill the user needs.
+                                </p>
+                            </div>
+                            <div class="mobile-button-solo">
+
+                                <p class="group-solo">
+                                    Group: Andrea, Mario & myself
+                                </p>
+
+                                <a class="case-study-button2"
+                                    href="https://www.behance.net/gallery/110955963/Ecommerce-web-redesign-of-a-local-grocery-shop"
+                                    target=_blank>
+                                    <button>
+                                        Case study
+                                    </button>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="prototipo-picture">
+                        <a href="https://www.behance.net/gallery/110955963/Ecommerce-web-redesign-of-a-local-grocery-shop"
+                            title="Zappa's No.3" target="_blank">
+                            <img src="img/zappas.png" alt="Zappas redesign">
+                        </a>
+                    </div>
+                </div>
+
+
+
+
+
+
+
+            </section>
+
+            <section id="About me">
+                <div class="aboutme">
+                    <h2 data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+                        About me
+                    </h2>
+                    <p data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+                        UX/UI designer with a background in industrial design and product development who loves being
+                        constantly
+                        challenged. I am always looking forward to improving and learning new skills. Problem solving,
+                        commitment and proactiveness are some of the qualities that best describe me.
+                    </p>
+                    <p data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+                        I have experience working in different fields of design, innovation design, graphic design and
+                        furniture
+                        design. Now I am looking forward to growing my career in the digital world.
+                    </p>
+                    <p class="p-bold" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+                        Design Thinking | Agile | Scrum | Lean UX | Research | Prototype | Wireframing | Usability
+                        Testing |
+                        Sketch | Figma | Adobe XD | Invision
+                    </p>
+                </div>
+                <div>
+                    <h4 data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+                        Where would you find me in my free time?
+                    </h4>
+                    <div class="arrow-2" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+                        <img src="img/flecha2.svg">
+                    </div>
+                    <div class="hobbies-group">
+                        <div class="hobbies">
+                            <img class="img-hobbies" src="img/horse-riding.jpg" alt="horse riding"
+                                data-aos="flip-right">
+                            <div class="overlay">
+                                <div class="img-content">
+                                    <h4 class="h4-white">
+                                        Horse riding
+                                    </h4>
+                                    <p class="p-white">
+                                        Since I was a child I love horses but it was not until 2018 when I was able to
+                                        start my passion for horse riding.
+                                    </p>
+
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="hobbies">
+                            <img class="img-hobbies" src="img/snorkeling.jpg" alt="snorkeling" data-aos="flip-right">
+                            <div class="overlay">
+                                <h4 class="h4-white">
+                                    Snorkeling
+                                </h4>
+                                <p class="p-white">
+                                    I always have a pair of diving googles in my backpack. You never know when you would
+                                    have the chance to explore the ocean.
+                                </p>
+                            </div>
+                        </div>
+
+
+
+                        <div class="hobbies">
+                            <img class="img-hobbies" src="img/dancing.jpg" alt="dancing" data-aos="flip-right">
+                            <div class="overlay">
+                                <h4 class="h4-white">
+                                    Dancing
+                                </h4>
+                                <p class="p-white">
+                                    I have always had a passion for dancing, but two years ago it started my journey in
+                                    Caribbean dances.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+
+            </section>
+            <section id="Contact" data-aos="fade-up">
+                <div>
+                    <h2>
+                        Let's talk
+                    </h2>
+
+                    <div class="lets-talk">
+
+                        <div class="buttons-together">
+
+
+                            <a class="social-media" href="mailto:larrosa.designs@gmail.com" target="blank">
+                                <button>
+                                    larrosa.designs@gmail.com
+                                </button>
+
+                            </a>
+
+
+                            <a class="social-media" href="https://www.linkedin.com/in/laura-larrosa-ux-ui"
+                                target=_blank>
+                                <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M38.75 20C38.75 30.3553 30.3553 38.75 20 38.75C9.64466 38.75 1.25 30.3553 1.25 20C1.25 9.64466 9.64466 1.25 20 1.25C30.3553 1.25 38.75 9.64466 38.75 20ZM40 20C40 31.0457 31.0457 40 20 40C8.95431 40 0 31.0457 0 20C0 8.95431 8.95431 0 20 0C31.0457 0 40 8.95431 40 20ZM13.1944 15.1389C14.4737 15.1389 15.1389 14.269 15.1389 13.1944C15.1389 12.1711 14.3713 11.25 13.1944 11.25C12.0175 11.25 11.25 12.2222 11.25 13.2968C11.25 14.269 12.0175 15.1389 13.1944 15.1389ZM11.25 16.1111H15.1389V28.75H11.25V16.1111ZM24.5029 16.3158C22.4561 16.3158 21.2792 17.4927 20.8187 18.2603H20.7164L20.5117 16.6229H17.0322C17.0322 17.1215 17.0542 17.6643 17.0778 18.246L17.0778 18.2461C17.1051 18.9179 17.1345 19.6416 17.1345 20.4094V28.75H21.0234V21.8422C21.0234 21.4328 21.0234 21.1769 21.1257 20.8699C21.4327 20.2047 21.8933 19.3348 22.9678 19.3348C24.3494 19.3348 24.9123 20.5117 24.9123 22.0468V28.75H28.8012V21.5863C28.75 17.9533 26.9079 16.3158 24.5029 16.3158Z"
+                                        fill="#6D5DA8" />
+                                </svg>
+                            </a>
+
+                            <a class="social-media" href="https://www.behance.net/LauraLarrosa" target=_blank>
+                                <svg width="40" height="40" viewBox="0 0 40 40" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M38.75 20C38.75 30.3553 30.3553 38.75 20 38.75C9.64466 38.75 1.25 30.3553 1.25 20C1.25 9.64466 9.64466 1.25 20 1.25C30.3553 1.25 38.75 9.64466 38.75 20ZM40 20C40 31.0457 31.0457 40 20 40C8.95431 40 0 31.0457 0 20C0 8.95431 8.95431 0 20 0C31.0457 0 40 8.95431 40 20ZM19.9824 17.1798C19.9824 19.4834 18.0883 19.637 18.0883 19.637C20.5455 19.637 20.3919 22.8621 20.3919 22.8621C20.3919 26.855 16.4501 26.7015 16.4501 26.7015H10V13.75H16.4501C18.4466 13.75 19.9824 14.8762 19.9824 17.1798ZM16.4501 16.0536H12.8155V18.9204H16.1942C16.8085 18.9204 17.3204 18.7156 17.3204 17.3846C17.3204 16.0536 16.4501 16.0536 16.4501 16.0536ZM12.8155 24.3978H16.2454C16.7573 24.3467 17.7299 24.1931 17.7811 22.7085C17.7811 20.9168 16.4501 20.9168 16.4501 20.9168H12.8155V24.3978ZM20.9036 21.9918C20.9036 21.9918 20.9036 17.0262 25.6644 17.0262C30.6811 17.0262 29.9645 22.6573 29.9645 22.6573H23.5143C23.5143 25.0633 25.7156 24.9097 25.7156 24.9097C27.7632 24.9097 27.712 23.5276 27.712 23.5276H29.9133C29.9133 27.2133 25.6644 26.9574 25.6644 26.9574C20.5964 26.9574 20.9036 21.9918 20.9036 21.9918ZM23.5143 20.9168H27.6097C27.6097 20.9168 27.6097 18.9203 25.7156 18.9203C23.7703 18.9203 23.5143 20.9168 23.5143 20.9168ZM28.1216 14.5177H23.0025V16.1047H28.1216V14.5177Z"
+                                        fill="#6D5DA8" />
+                                </svg>
+                            </a>
+
+                            <a class="social-media" href="https://larrosadesigns.medium.com" target=_blank>
+                                <svg width="40" height="40" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M38.75 20C38.75 30.3553 30.3553 38.75 20 38.75C9.64466 38.75 1.25 30.3553 1.25 20C1.25 9.64466 9.64466 1.25 20 1.25C30.3553 1.25 38.75 9.64466 38.75 20ZM40 20C40 31.0457 31.0457 40 20 40C8.95431 40 0 31.0457 0 20C0 8.95431 8.95431 0 20 0C31.0457 0 40 8.95431 40 20ZM12.1195 14.9427C12.3028 15.0988 12.3965 15.328 12.3716 15.56V23.9109C12.426 24.2122 12.3255 24.5199 12.1008 24.7399L10 27.1473V27.4647H15.957V27.1473L13.8562 24.7399C13.6299 24.5203 13.5232 24.2146 13.5668 23.9109V16.6887L18.7955 27.4647H19.4024L23.8936 16.6887V25.2778C23.8936 25.5071 23.8936 25.5511 23.7348 25.7011L22.1195 27.1825V27.5H29.9627V27.1825L28.4034 25.7363C28.2657 25.6372 28.1974 25.4743 28.226 25.3131V14.6869C28.1974 14.5257 28.2657 14.3628 28.4034 14.2637L30 12.8175V12.5H24.4725L20.5322 21.7857L16.0504 12.5H10.2521V12.8175L12.1195 14.9427Z"
+                                        fill="#6D5DA8" />
+                                </svg>
+                            </a>
+
+
+                        </div>
+
+                        <!--Mobile-->
+
+                        <div class="buttons-together-mobile">
+
+                            <div class="mail">
+
+                                <a class="social-media" href="mailto:larrosa.designs@gmail.com" target="blank">
+                                    <button>
+                                        larrosa.designs@gmail.com
+                                    </button>
+
+                                </a>
+
+                            </div>
+
+                            <div>
+                                <a class="social-media" href="https://www.linkedin.com/in/laura-larrosa-ux-ui"
+                                    target=_blank>
+                                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M31 16C31 24.2843 24.2843 31 16 31C7.71573 31 1 24.2843 1 16C1 7.71573 7.71573 1 16 1C24.2843 1 31 7.71573 31 16ZM32 16C32 24.8366 24.8366 32 16 32C7.16344 32 0 24.8366 0 16C0 7.16344 7.16344 0 16 0C24.8366 0 32 7.16344 32 16ZM10.5556 12.1111C11.5789 12.1111 12.1111 11.4152 12.1111 10.5556C12.1111 9.73684 11.4971 9 10.5556 9C9.61403 9 9 9.77778 9 10.6374C9 11.4152 9.61403 12.1111 10.5556 12.1111ZM9 23V12.8889H12.1111V23H9ZM19.6023 13.0527C17.9649 13.0527 17.0234 13.9942 16.655 14.6082H16.5731L16.4094 13.2983H13.6257C13.6257 13.6972 13.6434 14.1314 13.6623 14.5968L13.6623 14.5969L13.6623 14.5969C13.6841 15.1343 13.7076 15.7133 13.7076 16.3275V23H16.8187V17.4737C16.8187 17.1462 16.8187 16.9415 16.9006 16.6959C17.1462 16.1638 17.5146 15.4679 18.3743 15.4679C19.4795 15.4679 19.9298 16.4094 19.9298 17.6375V23H23.0409V17.269C23 14.3626 21.5263 13.0527 19.6023 13.0527Z"
+                                            fill="#6D5DA8" />
+                                    </svg>
+
+                                </a>
+
+                                <a class="social-media" href="https://www.behance.net/LauraLarrosa" target=_blank>
+                                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M31 16C31 24.2843 24.2843 31 16 31C7.7157 31 1 24.2843 1 16C1 7.7157 7.7157 1 16 1C24.2843 1 31 7.7157 31 16ZM32 16C32 24.8365 24.8365 32 16 32C7.16345 32 0 24.8365 0 16C0 7.16345 7.16345 0 16 0C24.8365 0 32 7.16345 32 16ZM15.9858 13.7438C15.9858 15.5867 14.4706 15.7097 14.4706 15.7097C16.4364 15.7097 16.3135 18.2897 16.3135 18.2897C16.3135 21.484 13.1602 21.3611 13.1602 21.3611H8V11H13.1602C14.7573 11 15.9858 11.9009 15.9858 13.7438ZM13.1602 12.8429H10.2524V15.1363H12.9553C13.4468 15.1363 13.8563 14.9725 13.8563 13.9077C13.8563 12.8429 13.1602 12.8429 13.1602 12.8429ZM10.2524 19.5182H12.9963C13.4059 19.4773 14.184 19.3545 14.2249 18.1668C14.2249 16.7335 13.1602 16.7335 13.1602 16.7335H10.2524V19.5182ZM16.7229 17.5934C16.7229 17.5934 16.7229 13.621 20.5315 13.621C24.5449 13.621 23.9716 18.1258 23.9716 18.1258H18.8115C18.8115 20.0506 20.5725 19.9277 20.5725 19.9277C22.2106 19.9277 22.1697 18.822 22.1697 18.822H23.9307C23.9307 21.7706 20.5315 21.5659 20.5315 21.5659C16.4772 21.5659 16.7229 17.5934 16.7229 17.5934ZM18.8115 16.7334H22.0878C22.0878 16.7334 22.0878 15.1362 20.5725 15.1362C19.0162 15.1362 18.8115 16.7334 18.8115 16.7334ZM22.4973 11.6142H18.402V12.8838H22.4973V11.6142Z"
+                                            fill="#6D5DA8" />
+                                    </svg>
+                                </a>
+
+
+                                <a class="social-media" href="https://larrosadesigns.medium.com" target=_blank>
+                                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M31 16C31 24.2843 24.2843 31 16 31C7.7157 31 1 24.2843 1 16C1 7.7157 7.7157 1 16 1C24.2843 1 31 7.7157 31 16ZM32 16C32 24.8365 24.8365 32 16 32C7.16345 32 0 24.8365 0 16C0 7.16345 7.16345 0 16 0C24.8365 0 32 7.16345 32 16ZM9.85645 12.1724C9.89282 12.2587 9.90747 12.3531 9.89734 12.448V19.1287C9.9408 19.3698 9.86035 19.6159 9.68066 19.7919L8 21.7178V21.9718H12.7656V21.7178L11.085 19.7919C10.9039 19.6162 10.8185 19.3716 10.8534 19.1287V13.351L15.0364 21.9718H15.522L19.1149 13.351V20.2222C19.1149 20.4056 19.1149 20.4409 18.9879 20.5609L17.6956 21.746V22H23.9701V21.746L22.7227 20.5891C22.6125 20.5098 22.558 20.3795 22.5808 20.2504V11.7496C22.558 11.6205 22.6125 11.4902 22.7227 11.4109L24 10.254V10H19.578L16.4258 17.4286L12.8403 10H8.20166V10.254L9.69556 11.9542C9.76721 12.0151 9.82166 12.0901 9.85645 12.1724Z"
+                                            fill="#6D5DA8" />
+                                    </svg>
+
+                                </a>
+                            </div>
+
+
+
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <footer class="main-footer">
+
+                <div class="main-footer__wrapper">
+                    <div class="designed-byme">
+                        <h5>
+                            I designed and coded this website from scratch. © 2020
+
+                        </h5>
+                    </div>
+                    <nav class="main-nav">
+                        <ul class="main-nav__ul">
+                            <li>
+                                <a class="main-nav__item" href="#Works"> Works </a>
+                            </li>
+
+                            <li>
+                                <a class="main-nav__item" href="#About me"> About me </a>
+                            </li>
+                            <li>
+                                <a class="main-nav__item" href="#Contact"> Contact </a>
+                            </li>
+                        </ul>
+                    </nav>
+
+
+    </main>
+
+
+
+
+    </footer>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>
