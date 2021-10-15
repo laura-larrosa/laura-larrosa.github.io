@@ -1,0 +1,806 @@
+@font-face {
+    font-family: "Montserrat-Bold";
+    src: url("../fonts/Montserrat-Bold.ttf");
+}
+@font-face {
+    font-family: "Montserrat-Regular";
+    src: url("../fonts/Montserrat-Regular.ttf")
+}
+
+* {
+    box-sizing: border-box;
+}
+
+
+h1 {
+    font-size: 44px;
+    font-family: "Montserrat-Bold";
+    text-align: center;
+    line-height: 140%;
+    width: 506px;
+    margin: auto;
+    max-width: 928px;
+    color: #363636;
+}
+
+h2 {
+    font-size: 44px;
+    font-family: "Montserrat-Bold";
+    text-align: center;
+    line-height: 140%;
+    width: 506px;
+    margin: auto;
+    max-width: 928px;
+    color: #363636;
+}
+
+h3 {
+    font-size: 27px;
+    line-height: 140%;
+    font-family: "Montserrat-Bold";
+    color: #363636;
+    text-align: left;
+    
+
+}
+
+
+h4 {
+    font-size: 20px;
+    font-family: "Montserrat-Bold";
+    line-height: 140%;
+    color: #363636;
+    text-align: center;
+    margin: auto;
+    max-width: 928px;
+    padding-left: 64px;
+    padding-top: 32px;
+}
+
+h5 {
+    font-size: 13px;
+    font-family: "Montserrat-Regular";
+    color: #363636;
+    text-align: center;
+    margin: auto;
+}
+
+p{
+    font-size: 16px;
+    font-family: "Montserrat-Regular";
+    text-align: center;
+    line-height: 140%;
+    width: 662px;
+    color: #363636;
+    margin: auto;
+    max-width: 928px;
+    padding-top: 32px;
+}
+
+span {
+    font-size: 20px;
+    color: #868686;
+    font-family: "Montserrat-Regular";
+
+}
+button {
+    font-size: 18px;
+    font-family: "Montserrat-Bold";
+    background-color: white;
+    color: #6D5DA8;
+    outline: none;
+    border-radius: 20px;
+    border: 1px solid #6D5DA8 ;
+    height: 40px;
+    padding-right: 16px;
+    padding-left: 16px;
+    
+}
+
+button:hover {
+    cursor: pointer;
+    color: #AA9DDB;
+    border: 1px solid #AA9DDB;
+
+}
+
+a {
+    text-decoration: none;
+    color: #6D5DA8;
+}
+a:hover {
+    color: #AA9DDB;
+  }
+
+img {
+    width: 100%;
+}
+
+svg {
+    fill: #6D5DA8;
+}
+
+svg :hover {
+    fill: #AA9DDB;
+}
+
+/*Nav bar*/
+
+.main-header {
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.05);
+    background-color: white;
+    z-index: 1;
+    position: fixed;
+    width: 100%;
+    
+  }
+
+  .main-header__wrapper {
+    height: 70px;  
+    max-width: 928px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 32px;
+    font-family: "Montserrat-Regular";
+   
+  }
+  
+  .main-nav__ul {
+    display: flex;
+    align-items: center;
+    padding: 0;
+  }
+  
+  .main-nav__item {
+    font-size: .9rem;
+    color: #6D5DA8;
+    cursor: pointer;
+    transition: all 0.2s ease-out;
+    list-style: none;
+  }
+
+  .main-nav__item:hover {
+    color: #AA9DDB;
+  }
+  .main-nav__item:not(first-child) {
+    margin-left: 24px;
+  }
+  
+  .mobile-menu-button {
+    display: none;
+    cursor: pointer;
+  }
+  .mobile-menu-button span {
+    position: relative;
+    display: inline-block;
+    width: 32px;
+    height: 2px;
+    margin-bottom: 6px;
+    background: #262626;
+    transition: all 0.4s ease-out;
+  }
+  
+  .mobile-menu-button.active span:first-child {
+    transform: rotate(-45deg);
+    top: 8px;
+  }
+  .mobile-menu-button.active span:last-child {
+    transform: rotate(45deg);
+    bottom: 8px;
+  }
+  .mobile-menu-button.active span:nth-child(2) {
+    opacity: 0;
+  }
+
+  li {
+      list-style-type: none;
+  }
+  
+
+  
+/*Main*/
+main {
+    margin: auto;
+    background-color: #FAFAFA;
+
+}
+
+/*Intro*/
+
+#intro {
+    padding-top: 150px;
+}
+
+.buttons-together {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    text-align: center;
+    padding: 32px 0px 32px 0px;
+}
+.contact {
+    margin-right: 16px;
+}
+
+.resume {
+    margin-left: 16px;
+}
+
+
+
+/*Works section*/
+#Works {
+    padding-top: 100px;
+    
+}
+
+.detail {
+    padding-top: 8px;
+}
+
+.arrow-1 {
+    position: relative;
+    left: -230px;
+    top: 40px;
+    width: 42px;
+}
+
+.projects-description {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+/* Box Projects*/
+.projects {
+    background-color: white;
+    outline: none;
+    border-radius: 10px;
+    box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.1) ;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-bottom: 32px;
+    max-width: 928px;
+    padding: 32px 0px 0px 0px;  
+
+}
+
+
+        
+.project-box-details {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.project-box-details-inside {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-right: 64px;
+    padding-left: 64px;
+}
+.project-box-details-inside-down {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-bottom: 64px;
+    border-bottom: 1px solid #868686;
+    margin-left: 64px;
+    margin-right: 64px;
+    
+}
+
+.project-info {
+    font-size: 16px;
+    font-family: "Montserrat-Regular";
+    text-align: left;
+    width: 60%;
+    color: #363636;
+    margin-left: 0%;
+    padding-top: 24px;
+  
+}
+
+.group-solo {
+    font-size: 16px;
+    font-family: "Montserrat-Regular";
+    text-align: right;
+    width: 30%;
+    color: #363636;
+    margin-right: 0%;
+    padding-top: 24px;
+    margin-top: 0px;
+    
+}
+
+.prototype-picture {
+    max-width: 928px;
+    
+}
+
+.prototipo-picture-img {
+   
+    max-width: 926px;
+    max-height: 50%;
+}
+
+.project-box-details-inside-down-mobile{
+    display: none;
+}
+
+
+
+
+/*About me*/
+
+.aboutme {
+    padding-top: 94px;
+}
+
+.p-bold {
+    font-family: "Montserrat-bold";
+}
+
+
+.arrow-2 {
+    margin: auto;
+    width: 10%;
+    max-width: 35px;
+    margin-bottom: 16px;
+}
+
+/* hoobies */
+
+.hobbies-group{
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    margin-top: 8px;
+    max-width: 928px;
+    
+}
+.img-hobbies {
+    display: block;
+    width: 100%;
+    height: 269px;
+    padding-right: 8px;
+    padding-left: 8px;
+}
+.img-hobbies-right {
+    
+   
+}
+
+.h4-white {
+    color: white;
+    font-size: 20px;
+    font-family: "Montserrat-Bold";
+    text-align: center;
+    max-width: 236px ;
+    padding-left: 0px;
+
+   
+} 
+
+.p-white {
+    color: white;
+    font-size: 16px;
+    font-family: "Montserrat-Regular";
+    text-align: center;
+    max-width:236px ;
+}
+
+
+.hobbies {
+    position: relative;
+    width: 50%;
+  }
+  
+.img-hobbies {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin-left: 8px;
+    height: 100%;
+    width: 100%;
+    max-width: 294px;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: rgba(155, 140, 211, 0.8);
+    border-radius: 10px;
+}
+
+.img-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.hobbies:hover .overlay {
+    opacity: 1;
+    
+}
+
+
+
+/*Lets talk*/
+
+#Contact {
+    padding-top: 94px;
+    padding-bottom: 80px;
+}
+
+.lets-talk {
+    margin: auto;
+    text-align: center;
+}
+
+.buttons-together {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+
+
+/*social media button*/
+.social-media  {
+    margin-right: 8px;
+    background-color: white;
+    color:#6D5DA8 ;
+}
+
+.social-media-last  {
+        margin-right: 0px;
+    
+    
+}
+
+.buttons-together-mobile {
+    display: none;
+}
+  
+
+/*Medium*/ /*
+.social-media-medium button {
+    background-image: url("../img/medium.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-left: 32px;
+    padding-left: 18px;
+    padding-right: 18px;
+    
+}
+​
+.social-media-medium button:hover{
+    background-image: url("../img/medium-hover.svg");
+    
+}
+*/
+
+/*Footer*/
+
+.main-footer {
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.05);
+    background-color: white;
+    width: 100%;
+
+
+    
+}
+
+.main-footer__wrapper {
+    height: 70px;  
+    max-width: 928px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 32px;
+    font-family: "Montserrat-Regular";
+}
+
+    
+  
+  
+.designed-byme {
+
+}
+
+
+
+
+
+
+
+
+
+/*------------MOBILE-------------*/
+@media only screen and (max-width: 414px) {
+    main {
+      padding: 0;
+    }
+    h1{
+        font-size: 27px;    
+        max-width: 300px;
+    }
+
+    h2{
+        font-size: 27px;
+        max-width: 300px;
+    }
+
+    h3{
+        font-size: 19px;
+    }
+    h4{
+        font-size: 19px;
+        margin: 0 auto;
+        padding-left: 0;
+        max-width: 300px;
+    }
+
+    
+    h5 {
+        font-size: 13px;
+        
+    }
+
+    p{
+        font-size: 16px;
+        max-width: 300px;
+    }
+
+    span{
+        font-size: 14px;
+    }
+
+    button {
+        font-size: 16px;
+        border-radius: 16px;
+        height: 32px;
+    
+    }
+    button::selection {
+    color: #AA9DDB;
+    border: 1px solid #AA9DDB;
+
+    }
+
+    /*Nav bar*/
+    header {
+    margin: 0;
+    padding: 0;
+    
+    }
+
+
+    .main-header {
+    
+    }
+    .main-nav {
+    visibility: hidden;
+    width: 0;
+    transition: all 0.4s ease-out;
+    position: fixed;
+    top: 0;
+    right: -100vw;
+    height: 100vh;
+    box-shadow: 0px 4px 12px -6px rgba(0, 0, 0, 0.2);
+    
+  }
+  .main-nav__ul {
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+  }
+  .main-nav__ul li {
+    margin: 0 0 32px 0 !important;
+    
+  }
+  .main-nav__ul li a {
+    font-size: 16pt;
+    
+  }
+  .main-nav.visible {
+    width: 100%;
+    background: white;
+    right: 0;
+    visibility: visible;
+    transition: all 0.8s ease-out;
+    
+  }
+  .mobile-menu-button {
+    display: flex;
+    flex-direction: column;
+    z-index: 9;
+   
+  }
+
+
+
+    /*Works section*/
+    #Works {
+    
+    }
+
+    .detail {
+    
+    }
+
+    .arrow-1 {
+    position: relative;
+    left: -70px;
+    top: 20px;
+    width: 42px;
+    }
+
+    .projects-description {
+
+    }
+
+    /* Box Projects*/
+    .projects {
+    
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-bottom: 16px;
+    padding: 16px 0px 0px 0px;  
+    margin-left: 16px;
+    margin-right: 16px; 
+    
+    }
+
+    .project-box-details {
+    
+
+    }
+
+
+
+    .project-box-details-inside {
+    padding-right: 16px;
+    padding-left: 16px;
+    }
+
+    .project-box-details-inside-down {
+    display: none;
+    }
+
+    .project-box-details-inside-down-mobile {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    border-bottom: 1px solid #868686;
+    margin-left: 16px;
+    margin-right: 16px;
+    
+    }
+    .description-mobile {
+    width: 100%;
+    }
+
+    .mobile-button-solo {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 16px;
+    margin-bottom: 16px;
+
+    
+
+    }
+
+    .project-info {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    padding-top: 8px;
+
+  
+    }
+
+
+    .group-solo {
+    font-size: 14px;
+    text-align: left;
+    width: 50%;
+    margin-right: 0%;
+    padding-top: 0px;
+    margin-top: 0px;
+    margin: 0px;
+    
+    
+    }
+
+    .case-study-button {
+    display: none;
+    }
+    .case-study-button2 {
+    
+    }
+    .hobbies-group{
+    
+    max-width: 100%;
+    padding-left: 16px;
+    padding-right: 16px; 
+    
+    }
+    .overlay {
+    display:none
+    }
+
+    .arrow-2 {
+    
+    width: 5%;
+    
+    }
+
+
+
+    /*Lets talk*/
+
+    #Contact {
+    padding-top: 64px;
+    padding-bottom: 64px;
+    }
+
+
+
+
+    .buttons-together-mobile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: space-between;
+    margin-top: 32px;
+    margin-bottom: 16px;
+    }
+
+    .lets-talk .buttons-together {
+        display: none;
+    }
+
+    .mail {
+    
+    margin-bottom: 16px;
+    }
+
+    /*social media button*/
+    .social-media  {
+    margin-right: 8px;
+    margin-left: 8px;
+
+    }
+
+
+    /*Footer*/
+    footer nav .main-nav {
+    display: none;
+    }
+
+}
+
