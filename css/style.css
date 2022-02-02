@@ -1,10 +1,14 @@
 @font-face {
-    font-family: "Montserrat-Bold";
-    src: url("../fonts/Montserrat-Bold.ttf");
+    font-family: "px-grotesk";
+    src: url("../fonts/Px-Grotesk-Regular.ttf");
 }
 @font-face {
-    font-family: "Montserrat-Regular";
-    src: url("../fonts/Montserrat-Regular.ttf")
+    font-family: "Inter-Semibold";
+    src: url("../fonts/Inter-SemiBold.ttf");
+}
+@font-face {
+    font-family: "Inter-Regular";
+    src: url("../fonts/Inter-Regular.ttf")
 }
 
 * {
@@ -13,11 +17,21 @@
 
 
 h1 {
-    font-size: 44px;
-    font-family: "Montserrat-Bold";
+    font-size: 60px;
+    font-family: "px-grotesk";
     text-align: center;
     line-height: 140%;
-    width: 506px;
+    width: 550px;
+    margin: auto;
+    max-width: 928px;
+    color: #363636;
+}
+h6 {
+    font-size: 44px;
+    font-family: "px-grotesk";
+    text-align: center;
+    line-height: 140%;
+    width: 550px;
     margin: auto;
     max-width: 928px;
     color: #363636;
@@ -25,10 +39,10 @@ h1 {
 
 h2 {
     font-size: 44px;
-    font-family: "Montserrat-Bold";
+    font-family: "Inter-Regular";
     text-align: center;
     line-height: 140%;
-    width: 506px;
+    width: 550px;
     margin: auto;
     max-width: 928px;
     color: #363636;
@@ -37,7 +51,7 @@ h2 {
 h3 {
     font-size: 27px;
     line-height: 140%;
-    font-family: "Montserrat-Bold";
+    font-family: "Inter-Semibold";
     color: #363636;
     text-align: left;
     
@@ -47,7 +61,7 @@ h3 {
 
 h4 {
     font-size: 20px;
-    font-family: "Montserrat-Bold";
+    font-family: "Inter-Semibold";
     line-height: 140%;
     color: #363636;
     text-align: center;
@@ -59,7 +73,7 @@ h4 {
 
 h5 {
     font-size: 13px;
-    font-family: "Montserrat-Regular";
+    font-family: "Inter-Regular";
     color: #363636;
     text-align: center;
     margin: auto;
@@ -67,7 +81,7 @@ h5 {
 
 p{
     font-size: 16px;
-    font-family: "Montserrat-Regular";
+    font-family: "Inter-Regular";
     text-align: center;
     line-height: 140%;
     width: 662px;
@@ -80,17 +94,17 @@ p{
 span {
     font-size: 20px;
     color: #868686;
-    font-family: "Montserrat-Regular";
+    font-family: "Inter-Regular";
 
 }
 button {
     font-size: 18px;
-    font-family: "Montserrat-Bold";
+    font-family: "Inter-Semibold";
     background-color: white;
-    color: #6D5DA8;
+    color: #8387E4;
     outline: none;
     border-radius: 20px;
-    border: 1px solid #6D5DA8 ;
+    border: 1px solid #8387E4 ;
     height: 40px;
     padding-right: 16px;
     padding-left: 16px;
@@ -99,17 +113,17 @@ button {
 
 button:hover {
     cursor: pointer;
-    color: #AA9DDB;
-    border: 1px solid #AA9DDB;
+    color: #B8BBFA;
+    border: 1px solid #B8BBFA;
 
 }
 
 a {
     text-decoration: none;
-    color: #6D5DA8;
+    color: #363636;
 }
 a:hover {
-    color: #AA9DDB;
+    color: #8387E4;
   }
 
 img {
@@ -117,11 +131,11 @@ img {
 }
 
 svg {
-    fill: #6D5DA8;
+    fill: #8387E4;
 }
 
 svg :hover {
-    fill: #AA9DDB;
+    fill: #B8BBFA;
 }
 
 /*Nav bar*/
@@ -143,7 +157,7 @@ svg :hover {
     align-items: center;
     justify-content: space-between;
     padding: 0 32px;
-    font-family: "Montserrat-Regular";
+    font-family: "Inter-Regular";
    
   }
   
@@ -155,14 +169,14 @@ svg :hover {
   
   .main-nav__item {
     font-size: .9rem;
-    color: #6D5DA8;
+    color: #363636;
     cursor: pointer;
     transition: all 0.2s ease-out;
     list-style: none;
   }
 
   .main-nav__item:hover {
-    color: #AA9DDB;
+    color: #8387E4;
   }
   .main-nav__item:not(first-child) {
     margin-left: 24px;
@@ -228,6 +242,9 @@ main {
 
 .resume {
     margin-left: 16px;
+}
+#p-atf{
+    width:550px;
 }
 
 
@@ -300,7 +317,7 @@ main {
 
 .project-info {
     font-size: 16px;
-    font-family: "Montserrat-Regular";
+    font-family: "Inter-Regular";
     text-align: left;
     width: 60%;
     color: #363636;
@@ -311,7 +328,7 @@ main {
 
 .group-solo {
     font-size: 16px;
-    font-family: "Montserrat-Regular";
+    font-family: "Inter-Regular";
     text-align: right;
     width: 30%;
     color: #363636;
@@ -346,7 +363,7 @@ main {
 }
 
 .p-bold {
-    font-family: "Montserrat-bold";
+    font-family: "Inter-Semibold";
 }
 
 
@@ -382,7 +399,7 @@ main {
 .h4-white {
     color: white;
     font-size: 20px;
-    font-family: "Montserrat-Bold";
+    font-family: "Inter-Semibold";
     text-align: center;
     max-width: 236px ;
     padding-left: 0px;
@@ -393,7 +410,7 @@ main {
 .p-white {
     color: white;
     font-size: 16px;
-    font-family: "Montserrat-Regular";
+    font-family: "Inter-Regular";
     text-align: center;
     max-width:236px ;
 }
@@ -465,7 +482,7 @@ main {
 .social-media  {
     margin-right: 8px;
     background-color: white;
-    color:#6D5DA8 ;
+    color:#8387E4 ;
 }
 
 .social-media-last  {
@@ -515,7 +532,7 @@ main {
     align-items: center;
     justify-content: space-between;
     padding: 0 32px;
-    font-family: "Montserrat-Regular";
+    font-family: "Inter-Regular";
 }
 
     
@@ -580,8 +597,8 @@ main {
     
     }
     button::selection {
-    color: #AA9DDB;
-    border: 1px solid #AA9DDB;
+    color: #B8BBFA;
+    border: 1px solid #B8BBFA;
 
     }
 
